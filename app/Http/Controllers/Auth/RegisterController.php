@@ -3,7 +3,6 @@
 namespace App\Http\Controllers\Auth;
 
 use App\User;
-use App\Role;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
@@ -70,9 +69,6 @@ class RegisterController extends Controller
             'password' => Hash::make($data['password']),
             'is_admin' => '0',
         ]);
-        
-        //$role = Role::select('id')->where('name', 'basic')->first();
-        //$user->roles()->attach($role);
 
         return $user;
     }

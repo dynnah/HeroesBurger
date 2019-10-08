@@ -13,16 +13,11 @@ class UsersTableSeeder extends Seeder
      */
     public function run()
     {   
-
-        $adminRole = Role::where('name', 'admin')->first();
-
           $admin = User::create([
          'name' => 'admin',
          'email' => 'admin@admin.com',
          'password' => bcrypt('admin'),
          'is_admin' => '1',
          ]);
-
-        // $admin->roles()->attach($adminRole);
     }
 }
