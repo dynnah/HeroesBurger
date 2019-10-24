@@ -44,5 +44,4 @@
   </tbody>
 </table>
 </div>
-<!-- <a href="{{ route('products.create') }}" class="btn btn-primary" role="button">Add Product</a> -->
 @endsection

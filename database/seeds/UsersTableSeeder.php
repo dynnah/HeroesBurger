@@ -2,7 +2,6 @@
 
 use Illuminate\Database\Seeder;
 use App\User;
-use App\Role;
 
 class UsersTableSeeder extends Seeder
 {
@@ -13,6 +12,8 @@ class UsersTableSeeder extends Seeder
      */
     public function run()
     {   
+        User::truncate();
+
           $admin = User::create([
          'name' => 'admin',
          'email' => 'admin@admin.com',
