@@ -3,27 +3,20 @@
 @section('title', 'Product')
 
 @section('content')
-<div class="table-responsive">
-<table class="table table-sm table-hover">
-  <thead class="thead-dark">
-    <tr>
-      <th>ID</th>
-      <th>Nome</th>
-      <th>Descrição</th>
-      <th>Preço</th>
-      <th>Tipo</th>
-    </tr>
-  </thead>
-  <tbody>
-   <tr>
-      <td>{{$product->id}}</td>
-      <td>{{$product->nome}}</td>
-      <td>{{$product->descricao}}</td>
-      <td>{{$product->preco}}</td>
-      <td>{{$product->tipo}}</td>
-      </tr>
-  </tbody>
-</table>
+<div class="card mb-3" style="">
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <img src="/images/img.png" class="card-img" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+      <p class="card-title">{{$product->nome}}</p>
+      <p class="card-subtitle mb-2 text-muted">{{$product->tipo}}</p>
+      <p class="card-text">{{$product->descricao}}</p>
+      <p class="card-text">Preço: R$ {{$product->preco}}</p>
+      </div>
+    </div>
+  </div>
 </div>
 
 @endsection

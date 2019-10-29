@@ -37,6 +37,11 @@
         <input type="text" class="form-control" id="tipo" name="tipo" value="{{ $product->tipo }}" />
       </div>
       <button type="submit" class="btn btn-primary">Update Product</button>
+      <form action="{{ route('products.destroy', $product->id)}}" method="post">
+          @csrf
+          @method('DELETE')
+          <button class="btn btn-danger" type="submit">Delete Product</button>
+        </form>
     </form>
   </div>
 </div>
