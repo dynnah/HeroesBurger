@@ -23,7 +23,7 @@
         @include('partials.nav')
 
         <main class="py-4 container">
-            <h1 class="text-center my-5">@yield('title')</h1>
+            <div class="text-center my-5">@yield('imagem')</div>
             <div class="mt-4">
                 @yield('content')
             </div>

@@ -2,6 +2,10 @@
 
 @section('title', 'Index Coupons')
 
+@section('imagem')
+<img src="images/cupons.png">
+@endsection
+
 @section('content')
 @if(session()->get('success'))
 <div class="alert alert-success alert-block">

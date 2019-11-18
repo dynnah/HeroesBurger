@@ -12,7 +12,7 @@
         <!-- Styles -->
         <style>
             html, body {
-                background-color: #fff;
+                background-color: #f8f9fa;
                 color: #636b6f;
                 font-family: 'Nunito', sans-serif;
                 font-weight: 200;
@@ -44,10 +44,6 @@
                 text-align: center;
             }
 
-            .title {
-                font-size: 84px;
-            }
-
             .links > a {
                 color: #636b6f;
                 padding: 0 25px;
@@ -59,7 +55,7 @@
             }
 
             .m-b-md {
-                margin-bottom: 30px;
+                margin-bottom: -20px;
             }
         </style>
     </head>
@@ -81,17 +77,14 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                <img src="images/logo.png" width="60%" height="60%">
                 </div>
 
                 <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                    <a href=">Home"></a>
+                    <a href="{{ route('products.index') }}">Produtos</a>
+                    <a href="{{ route('coupons.index') }}">Cupons</a>
+                    <a href="">Sobre</a>
                 </div>
             </div>
         </div>

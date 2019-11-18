@@ -12,12 +12,12 @@
 */
 
 Route::get('/', function () {
-    return view('auth.login');
+    return view('welcome');
 });
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::resource('products', 'ProductsController')->middleware('auth');
-Route::resource('coupons', 'CouponsController')->middleware('auth');
+Route::resource('products', 'ProductsController');
+Route::resource('coupons', 'CouponsController');
 

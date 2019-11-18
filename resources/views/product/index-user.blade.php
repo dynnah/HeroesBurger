@@ -1,6 +1,10 @@
 @extends('layouts.app')
-
 @section('title', 'Products')
+
+@section('imagem')
+<img src="images/produtos.png">
+@endsection
+
 
 @section('content')
 @if(session()->get('success'))
