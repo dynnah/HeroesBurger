@@ -10,7 +10,10 @@
 </div>
 @endif
 <div class="row">
-@foreach($products as $product)
+<!-- @foreach($products as $product)
+@foreach(File::glob(public_path('images/produtos/*.*')) as $imagem) ?>
+{{ asset('images/produtos/' . basename($imagem)) }}
+@endforeach ?> -->
   <div class="col-sm-4">
     <div class="card" style="width: 18rem; margin-bottom:25px;">
       <div class="card-body">
@@ -18,11 +21,12 @@
       <p class="card-title">{{$product->nome}}</p>
       <p class="card-subtitle mb-2 text-muted">{{$product->tipo}}</p>
       <p class="card-text">Preço: R$ {{$product->preco}}</p>
-      <a href="{{ route('products.show', $product->id) }}" class="btn btn-primary stretched-link">View Product</a>
-      <a href="{{ route('products.edit', $product->id) }}" class="btn btn-primary stretched-link">Edit Product</a>
+      <a href="{{ route('products.show', $product->id) }}" class="btn btn-primary stretched-link">Ver Produto</a>
+      <a href="{{ route('products.edit', $product->id) }}" class="btn btn-primary stretched-link">Editar Produto</a>
       </div>
     </div>
   </div>
   @endforeach
+  
 </div>
 @endsection

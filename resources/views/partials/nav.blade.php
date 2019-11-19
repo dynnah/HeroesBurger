@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-md navbar-light bg-light shadow-sm">
+<nav class="navbar navbar-expand-md navbar-dark bg-dark shadow-sm">
   <div class="container">
     <a class="navbar-brand" href="{{ url('/') }}">
       <img src="images/logo.png" width="100px" height="100px">
@@ -10,9 +10,17 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <!-- Left Side Of Navbar -->
       <ul class="navbar-nav mr-auto">
-      <li class="nav-item">
-          <a class="nav-link" href="{{ url('/') }}">{{ __('Pagina Inicial') }}</a>
-        </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="{{ route('products.index') }}" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Produtos
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="{{ route('products.index') }}">Carnes</a>
+          <a class="dropdown-item" href="{{ route('products.index') }}">Veganos</a>
+          <a class="dropdown-item" href="{{ route('products.index') }}">Acompanhamentos</a>
+          <a class="dropdown-item" href="{{ route('products.index') }}">Bebidas</a>
+        </div>
+      </li>
         <li class="nav-item">
           <a class="nav-link" href="{{ route('coupons.index') }}">{{ __('Cupons') }}</a>
         </li>

@@ -12,7 +12,7 @@
         <!-- Styles -->
         <style>
             html, body {
-                background-color: #f8f9fa;
+                background-color: #343a40;
                 color: #636b6f;
                 font-family: 'Nunito', sans-serif;
                 font-weight: 200;
@@ -45,8 +45,18 @@
             }
 
             .links > a {
-                color: #636b6f;
-                padding: 0 25px;
+                color: #ada9a9;
+                padding: 0px 25px;
+                font-size: 13px;
+                font-weight: 600;
+                letter-spacing: .1rem;
+                text-decoration: none;
+                text-transform: uppercase;
+            }
+
+            .links-menu > a {
+                color: #dd9969;
+                padding: 0px 25px;
                 font-size: 13px;
                 font-weight: 600;
                 letter-spacing: .1rem;
@@ -80,7 +90,7 @@
                 <img src="images/logo.png" width="60%" height="60%">
                 </div>
 
-                <div class="links">
+                <div class="links-menu">
                     <a href=">Home"></a>
                     <a href="{{ route('products.index') }}">Produtos</a>
                     <a href="{{ route('coupons.index') }}">Cupons</a>

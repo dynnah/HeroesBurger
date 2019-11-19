@@ -24,11 +24,10 @@
       <p class="card-title">{{$product->nome}}</p>
       <p class="card-subtitle mb-2 text-muted">{{$product->tipo}}</p>
       <p class="card-text">Preço: R$ {{$product->preco}}</p>
-      <a href="{{ route('products.show', $product->id) }}" class="btn btn-primary stretched-link">View Product</a>
+      <a href="{{ route('products.show', $product->id) }}" class="btn btn-primary stretched-link">Ver Produto</a>
       </div>
     </div>
   </div>
-
-
+  
   @endforeach
 @endsection

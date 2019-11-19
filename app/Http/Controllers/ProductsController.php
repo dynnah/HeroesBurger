@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Product;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\File;
 
 class ProductsController extends Controller
 {
@@ -15,6 +16,7 @@ class ProductsController extends Controller
     public function index()
     {
         $products = Product::all();
+        // $imagens = File::glob(public_path('images/produtos/*.*'));
         return view('product.index-user', compact('products'));
     }
 
