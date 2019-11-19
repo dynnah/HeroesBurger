@@ -19,7 +19,7 @@
 </head>
 
 <body>
-    <div id="app">
+    <div id="app" style="background-color:white;">
         @include('partials.nav')
 
         <main class="py-4 container">
