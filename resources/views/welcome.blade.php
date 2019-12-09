@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>HeroesBurger</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
@@ -87,7 +87,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                <img src="images/logo.png" width="60%" height="60%">
+                <img src="images/logo.png" width="75%" height="75%">
                 </div>
 
                 <div class="links-menu">
