@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-md navbar-dark bg-dark shadow-sm">
+<nav class="navbar navbar-expand-md navbar-dark bg-dark shadow-sm ">
   <div class="container">
     <a class="navbar-brand" href="{{ url('/') }}">
       <img src="/images/logo.png" width="100px" height="100px">
@@ -25,7 +25,7 @@
           <a class="nav-link" href="{{ route('coupons.index') }}">{{ __('Cupons') }}</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{{ route('products.index') }}">{{ __('Sobre') }}</a>
+          <a class="nav-link" href="{{ url('/sobre') }}">{{ __('Sobre') }}</a>
         </li>
       </ul>
 

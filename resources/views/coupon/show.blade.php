@@ -1,27 +1,21 @@
 @extends('layouts.app')
-
 @section('title', 'Show Coupon')
 
 @section('content')
-<div class="table-responsive">
-<table class="table table-sm table-hover">
-  <thead class="thead-dark">
-    <tr>
-      <th>ID</th>
-      <th>Nome</th>
-      <th>Descrição</th>
-      <th>Preço</th>
-    </tr>
-  </thead>
-  <tbody>
-   <tr>
-      <td>{{$coupon->id}}</td>
-      <td>{{$coupon->nome}}</td>
-      <td>{{$coupon->descricao}}</td>
-      <td>{{$coupon->preco}}</td>
-      </tr>
-  </tbody>
-</table>
+
+<div class="card mb-3">
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <img src="/images/cupom.png" class="card-img" alt="Cupom">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+      <p class="card-title">{{$coupon->nome}}</p>
+      <p class="card-text">{{$coupon->descricao}}</p>
+      <p class="card-text">Preço: R$ {{$coupon->preco}}</p>
+      </div>
+    </div>
+  </div>
 </div>
 
 @endsection

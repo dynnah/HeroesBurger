@@ -42,7 +42,8 @@ class ProductsController extends Controller
             'nome' => 'required|max:255',
             'descricao' => 'required|max:255',
             'preco' => 'required|max:30',
-            'tipo' => 'required|max:30'
+            'tipo' => 'required|max:30',
+            'codigo' => 'required|max:30'
         ]);
         // dd($validatedData);
         Product::create($validatedData);
@@ -84,7 +85,8 @@ class ProductsController extends Controller
             'nome' => 'required|max:255',
             'descricao' => 'required|max:255',
             'preco' => 'required|max:30',
-            'tipo' => 'required|max:30'
+            'tipo' => 'required|max:30',
+            'codigo' => 'required|max:30'
             ]);
             
         $product->update($validatedData);

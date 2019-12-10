@@ -37,7 +37,13 @@
             .top-right {
                 position: absolute;
                 right: 10px;
-                top: 18px;
+                top: 20px;
+            }
+
+            .top-left {
+                position: absolute;
+                left: 16px;
+                top: 0px;
             }
 
             .content {
@@ -67,14 +73,33 @@
             .m-b-md {
                 margin-bottom: -20px;
             }
+
+            .sobre{
+                padding-left: 100px;
+                padding-right: 100px;
+            }
+
+            h4{
+                color: #dd9969;
+            }
+
+            .content {
+                padding-bottom: 50px;
+            }
+
         </style>
     </head>
     <body>
         <div class="flex-center position-ref full-height">
+                <div class="top-left links">
+                    <a class="navbar-brand" href="{{ url('/') }}">
+                        <img src="/images/logo.png" width="100px" height="100px">
+                    </a>
+                </div>
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
-                        <a href="{{ url('/home') }}">Home</a>
+                        <p></p>
                     @else
                         <a href="{{ route('login') }}">Login</a>
 
@@ -87,16 +112,21 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                <img src="images/logo.png" width="75%" height="75%">
+                    <img src="images/logo.png" width="15%" height="15%">
                 </div>
 
-                <div class="links-menu">
-                    <a href=">Home"></a>
-                    <a href="{{ route('products.index') }}">Produtos</a>
-                    <a href="{{ route('coupons.index') }}">Cupons</a>
-                    <a href="{{ url('/sobre') }}">Sobre</a>
+                <div class="sobre">
+                    <h4>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Aliquam lacinia orci ex, sit amet placerat orci mollis id. 
+                    Praesent dapibus metus vitae interdum sagittis. 
+                    Aenean orci massa, lacinia quis lectus sed, interdum interdum augue. 
+                    In hac habitasse platea dictumst. Duis gravida semper quam in accumsan. 
+                    Pellentesque tempor nisl sit amet enim finibus auctor. 
+                    Curabitur feugiat volutpat gravida. Cras tempor pretium tristique. 
+                    Integer maximus egestas felis, tristique accumsan diam sodales at. 
+                    Nunc nec justo sit amet tellus pretium fringilla.
+                    </h4>
                 </div>
-            </div>
-        </div>
     </body>
 </html>

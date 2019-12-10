@@ -35,6 +35,10 @@
         <label for="tipo">Tipo do Produto:</label>
         <input type="text" class="form-control" id="tipo" name="tipo" />
       </div>
+      <div class="form-group">
+        <label for="tipo">Código do Produto:</label>
+        <input type="text" class="form-control" id="codigo" name="codigo" />
+      </div>
       <button type="submit" class="btn btn-primary">Create Product</button>
     </form>
   </div>

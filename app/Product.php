@@ -11,6 +11,7 @@ class Product extends Model
         'nome',
         'descricao',
         'preco',
-        'tipo'
+        'tipo',
+        'codigo'
     ];
 }
