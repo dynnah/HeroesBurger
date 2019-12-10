@@ -19,6 +19,7 @@ class CreateProductsTable extends Migration
             $table->string('descricao');
             $table->double('preco', 8, 2);
             $table->string('tipo');
+            $table->string('codigo');
             $table->timestamps();
         });
     }

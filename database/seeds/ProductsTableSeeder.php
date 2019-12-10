@@ -19,6 +19,7 @@ class ProductsTableSeeder extends Seeder
         $products->descricao = 'Pão de batata artesanal, dois blends de carnes de costela (180g cada), geleia de bacon, queijo prato, picles e molho especial HEROES.';
         $products->preco = 23.50;
         $products->tipo = 'Burger';
+        $products->codigo = 'tony';
         $products->save();
 
         $products = new Product;
@@ -26,6 +27,7 @@ class ProductsTableSeeder extends Seeder
         $products->descricao = 'Pão brioche artesanal para Hambúrguer, blend de fraldinha (200g), queijo prato, salada de alface e tomate verde e molho especial HEROES.';
         $products->preco = 19.50;
         $products->tipo = 'Burger';
+        $products->codigo = 'peter';
         $products->save();
 
         $products = new Product;
@@ -33,6 +35,7 @@ class ProductsTableSeeder extends Seeder
         $products->descricao = 'Pão de batata artesanal para Hambúrguer, blend de fraldinha (200g), crispy de cebola crocante, bacon em tiras, queijo mussarela e molho especial HEROES.';
         $products->preco = 20.80;
         $products->tipo = 'Burger';
+        $products->codigo = 'diana';
         $products->save();
 
         $products = new Product;
@@ -40,6 +43,7 @@ class ProductsTableSeeder extends Seeder
         $products->descricao = 'Pão de tradicional para Hambúrguer, blend de picanha (200g), queijo prato, salada de tomate, alface e picles e molho especial HEROES.';
         $products->preco = 22.50;
         $products->tipo = 'Burger';
+        $products->codigo = 'bruce';
         $products->save();
 
         $products = new Product;
@@ -47,6 +51,7 @@ class ProductsTableSeeder extends Seeder
         $products->descricao = 'Pão de batata artesanal para Hambúrguer, blend de carnes (180g), cream cheese, salada de tomate e farofa de crocante de bacon.';
         $products->preco = 21.80;
         $products->tipo = 'Burger';
+        $products->codigo = 'barry';
         $products->save();
 
         $products = new Product;
@@ -54,6 +59,7 @@ class ProductsTableSeeder extends Seeder
         $products->descricao = 'Pão francês artesanal para Hambúrguer, blend de frango com bacon, queijo prato e molho especial HEROES.';
         $products->preco = 18.50;
         $products->tipo = 'Burger';
+        $products->codigo = 'oliver';
         $products->save();
 
         $products = new Product;
@@ -61,6 +67,7 @@ class ProductsTableSeeder extends Seeder
         $products->descricao = 'Pão tradicional de hambúrguer, blend de carne de costela de (200g), crispy de cebola crocante, queijo prato, picles e molho especial HEROES.';
         $products->preco = 20.80;
         $products->tipo = 'Burger';
+        $products->codigo = 'wade';
         $products->save();
 
         $products = new Product;
@@ -68,6 +75,7 @@ class ProductsTableSeeder extends Seeder
         $products->descricao = 'Batata crinckle temperada com páprica e sal';
         $products->preco = 9.00;
         $products->tipo = 'Acompanhamento';
+        $products->codigo = 'batatafrita';
         $products->save();
 
         $products = new Product;
@@ -75,6 +83,7 @@ class ProductsTableSeeder extends Seeder
         $products->descricao = 'Lata de 350ml';
         $products->preco = 4.50;
         $products->tipo = 'Bebidas';
+        $products->codigo = 'refrigerante';
         $products->save();
 
         $products = new Product;
@@ -82,6 +91,7 @@ class ProductsTableSeeder extends Seeder
         $products->descricao = 'Copo de 300ml';
         $products->preco = 9.00;
         $products->tipo = 'Bebidas';
+        $products->codigo = 'frozen';
         $products->save();
 
         $products = new Product;
@@ -89,6 +99,7 @@ class ProductsTableSeeder extends Seeder
         $products->descricao = 'Shake de 300ml';
         $products->preco = 8.00;
         $products->tipo = 'Bebidas';
+        $products->codigo = 'milkshake';
         $products->save();
 
         $products = new Product;
@@ -96,6 +107,7 @@ class ProductsTableSeeder extends Seeder
         $products->descricao = '';
         $products->preco = 6.00;
         $products->tipo = 'Sobremesas';
+        $products->codigo = 'sorvete';
         $products->save();
 
         $products = new Product;
@@ -103,8 +115,8 @@ class ProductsTableSeeder extends Seeder
         $products->descricao = '';
         $products->preco = 12.00;
         $products->tipo = 'Sobremesas';
+        $products->codigo = 'brownie';
         $products->save();
-
 
     }
 }

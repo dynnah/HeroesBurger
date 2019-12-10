@@ -19,7 +19,7 @@
   <div class="col-sm-4">
     <div class="card" style="width: 18rem; margin-bottom:25px;">
       <div class="card-body">
-      <img class="card-img-top" src="/images/img.png" alt="Card image" style="width:100%">
+      <img class="card-img-top" src="/images/products/{{$product->codigo}}.webp" alt="Produto" style="width:100%">
       <p class="card-title">{{$product->nome}}</p>
       <p class="card-subtitle mb-2 text-muted">{{$product->tipo}}</p>
       <p class="card-text">Preço: R$ {{$product->preco}}</p>
